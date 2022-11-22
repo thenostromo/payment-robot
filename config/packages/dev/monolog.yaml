@@ -1,0 +1,5 @@
+monolog:
+  handlers:
+    api_log:
+      type: stream
+      path: "%kernel.logs_dir%/api-%kernel.environment%.log"

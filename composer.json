@@ -9,13 +9,21 @@
         "ext-iconv": "*",
         "symfony/console": "6.1.*",
         "symfony/dotenv": "6.1.*",
+        "symfony/filesystem": "6.1.*",
+        "symfony/finder": "6.1.*",
         "symfony/flex": "^2",
         "symfony/framework-bundle": "6.1.*",
+        "symfony/http-client": "6.1.*",
+        "symfony/monolog-bundle": "^3.8",
         "symfony/runtime": "6.1.*",
         "symfony/yaml": "6.1.*"
     },
     "require-dev": {
-        "symfony/maker-bundle": "^1.48"
+        "phpunit/phpunit": "^9.5",
+        "symfony/browser-kit": "6.1.*",
+        "symfony/css-selector": "6.1.*",
+        "symfony/maker-bundle": "^1.48",
+        "symfony/phpunit-bridge": "^6.1"
     },
     "config": {
         "allow-plugins": {
