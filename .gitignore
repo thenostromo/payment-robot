@@ -11,6 +11,7 @@
 
 .idea/
 .php-cs-fixer.cache
+tools/php-cs-fixer/vendor
 
 ###> symfony/phpunit-bridge ###
 .phpunit.result.cache
