@@ -134,8 +134,8 @@ class CommissionManager
     #[Pure]
     private function validTransactionRequiredFields(TransactionModel $transactionModel): bool
     {
-         return $transactionModel->getBin()
-             && $transactionModel->getAmount()
-             && $transactionModel->getCurrency();
+        return $transactionModel->getBin()
+            && $transactionModel->getAmount()
+            && $transactionModel->getCurrency();
     }
 }
