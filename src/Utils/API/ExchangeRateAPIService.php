@@ -2,7 +2,6 @@
 
 namespace App\Utils\API;
 
-use JetBrains\PhpStorm\Pure;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Contracts\HttpClient\HttpClientInterface;
@@ -15,7 +14,6 @@ class ExchangeRateAPIService extends BaseAPIService
      * @param LoggerInterface $logger
      * @param HttpClientInterface $exchangeRateApiClient
      */
-    #[Pure]
     public function __construct(LoggerInterface $logger, HttpClientInterface $exchangeRateApiClient)
     {
         parent::__construct($logger, $exchangeRateApiClient);

@@ -3,7 +3,6 @@
 namespace App\Utils\Calculator;
 
 use App\Utils\Provider\RateProvider;
-use JetBrains\PhpStorm\Pure;
 
 class CommissionCalculator
 {
@@ -13,7 +12,6 @@ class CommissionCalculator
      * @param float $exchangeTargetRate
      * @return float
      */
-    #[Pure]
     public function calculateAmountFixed(string $currency, float $amount, float $exchangeTargetRate): float
     {
         if (RateProvider::RATE_EUR === $currency) {

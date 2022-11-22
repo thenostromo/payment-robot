@@ -7,7 +7,6 @@ use App\Utils\API\BinAPIService;
 use App\Utils\API\ExchangeRateAPIService;
 use App\Utils\Calculator\CommissionCalculator;
 use App\Utils\Provider\BinAplha2Provider;
-use JetBrains\PhpStorm\Pure;
 
 class CommissionManager
 {
@@ -131,7 +130,6 @@ class CommissionManager
      * @param TransactionModel $transactionModel
      * @return bool
      */
-    #[Pure]
     private function validTransactionRequiredFields(TransactionModel $transactionModel): bool
     {
         return $transactionModel->getBin()

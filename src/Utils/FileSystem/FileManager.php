@@ -2,7 +2,6 @@
 
 namespace App\Utils\FileSystem;
 
-use JetBrains\PhpStorm\Pure;
 use Symfony\Component\Filesystem\Exception\FileNotFoundException;
 use Symfony\Component\Filesystem\Filesystem;
 
@@ -13,7 +12,6 @@ class FileManager
      */
     private Filesystem $filesystem;
 
-    #[Pure]
     public function __construct()
     {
         $this->filesystem = new Filesystem();

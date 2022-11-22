@@ -2,7 +2,6 @@
 
 namespace App\Utils\API;
 
-use JetBrains\PhpStorm\Pure;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Contracts\HttpClient\HttpClientInterface;
@@ -13,7 +12,6 @@ class BinAPIService extends BaseAPIService
      * @param LoggerInterface $logger
      * @param HttpClientInterface $binApiClient
      */
-    #[Pure]
     public function __construct(LoggerInterface $logger, HttpClientInterface $binApiClient)
     {
         parent::__construct($logger, $binApiClient);
